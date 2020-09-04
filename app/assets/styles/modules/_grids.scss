@@ -1,0 +1,13 @@
+@mixin grid-equal($columns: 1, $rows: 1, $gapColumn: $padding, $gapRow: $padding) {
+    display: grid;
+    grid-gap: $gapRow $gapColumn;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: $rows;   
+}
+
+@mixin grid-unequal($cw: 40%, $rows: 1, $gapColumn: $padding, $gapRow: $padding) {
+    display: grid;
+    grid-gap: $gapRow $gapColumn;
+    grid-template-columns: $cw auto;
+    grid-template-rows: $rows;   
+}

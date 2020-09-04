@@ -1,0 +1,40 @@
+.page-section {
+    padding: 1.2rem 0; 
+    
+    @include tablet {
+        padding: 4.5rem 0;
+    }
+
+    &--blue {
+        background-color: $primary-color;
+    }  
+}
+
+.row {
+    
+    .textbox {
+        p {
+            line-height: 1.65;
+            margin: 1.8rem 0;
+            font-size: 1rem;
+            @include mobile {
+                font-size: 1.125rem;
+            }
+
+            a {
+                font-weight:700;
+            }
+        }
+    }
+    
+    @include tablet {  
+        .textbox {
+            padding: 0 $padding;
+        } 
+
+        &.__35-65 {
+            @include grid-unequal(35%, 1, 30px); 
+        
+        }
+    }
+}

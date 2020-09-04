@@ -1,0 +1,17 @@
+// @import libaries
+@import 'normalize.css';
+
+// @import basis
+@import './basis/variables';
+@import './basis/mixins';
+
+// @import modules
+@import './modules/headlines_text';
+@import './modules/main-elements';
+@import './modules/buttons';
+@import './modules/grids';
+
+// @import parts
+@import './parts/page-section';
+@import './parts/large-hero';
+

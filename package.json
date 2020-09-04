@@ -1,0 +1,37 @@
+{
+  "name": "modern_webdev_project",
+  "version": "1.0.0",
+  "description": "Travel site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonas-graae/buildtools_website.git"
+  },
+  "author": "Jonas Graae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonas-graae/buildtools_website/issues"
+  },
+  "homepage": "https://github.com/jonas-graae/buildtools_website#readme",
+  "devDependencies": {
+    "css-loader": "^4.2.2",
+    "group-css-media-queries-loader": "^3.0.2",
+    "media-query-plugin": "^1.3.1",
+    "mini-css-extract-plugin": "^0.11.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
