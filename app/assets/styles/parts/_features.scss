@@ -1,0 +1,33 @@
+.features__item {
+    margin-bottom: 5rem;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 2fr 8fr;
+        grid-column-gap: 10px;
+        margin: 0;
+    }
+    
+
+    &--icon {
+        display: block;
+        width: 20%;
+        margin: 0 auto 20px;
+
+        @include tablet {
+            width: 70%;
+            margin: 0;
+        }
+    }
+
+    &-hl {
+        margin: 0 0 0.8rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-align: center;
+        @include tablet {
+            text-align: left;
+            font-size: 1.875rem;
+        }
+    }
+}

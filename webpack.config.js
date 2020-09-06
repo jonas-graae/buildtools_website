@@ -39,7 +39,8 @@ module.exports = {
                 use: [ 
                     'style-loader',
                     // MiniCssExtractPlugin.loader,
-                    'css-loader',    
+                    
+                    'css-loader?url=false',   
                     // MediaQueryPlugin.loader,
                     {
                         loader: 'group-css-media-queries-loader'

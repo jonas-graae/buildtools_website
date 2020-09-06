@@ -2,7 +2,7 @@
     display: grid;
     grid-gap: $gapRow $gapColumn;
     grid-template-columns: repeat($columns, 1fr);
-    grid-template-rows: $rows;   
+    grid-template-rows: repeat($rows, 1fr);   
 }
 
 @mixin grid-unequal($cw: 40%, $rows: 1, $gapColumn: $padding, $gapRow: $padding) {

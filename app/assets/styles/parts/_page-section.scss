@@ -8,10 +8,23 @@
     &--blue {
         background-color: $primary-color;
         color: #fff;
-    }  
+    }
+    
+    &--testimonials {
+        background-color: #e0e6ef;
+
+        @include tablet {
+            background: url('assets/images/testimonials-bg.jpg') top center no-repeat;
+            background-size: cover;
+        }
+    }
 }
 
 .row {
+
+    &--t-padding {
+        padding-top: 80px;
+    }
     
     .textbox {
         p {
@@ -42,41 +55,12 @@
         &.__2x2 {
             @include grid-equal(2,2, 75px, 75px)
         }
-    }
-}
 
-.features__item {
-    
-    margin-bottom: 5rem;
-
-    @include tablet {
-        display: grid;
-        grid-template-columns: 2fr 8fr;
-        grid-column-gap: 10px;
-        margin: 0;
-    }
-    
-
-    &--icon {
-        display: block;
-        width: 20%;
-        margin: 0 auto 20px;
-
-        @include tablet {
-            width: 70%;
-            margin: 0;
-        }
-    }
-
-    &-hl {
-        margin: 0 0 0.8rem;
-        font-size: 1.6rem;
-        font-weight: 300;
-        text-align: center;
-        @include tablet {
-            text-align: left;
-            font-size: 1.875rem;
+        &.__3x1 {
+            @include grid-equal(3, 1, 50px, 0)
         }
     }
 }
+
+
 
