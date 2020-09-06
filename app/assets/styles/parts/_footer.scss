@@ -1,0 +1,17 @@
+.site-footer {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 0.5rem 0;
+    text-align: center;
+
+    &__text {
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 200;
+
+        @include tablet {
+            display: inline;
+            margin: 0 1.4rem 0 0;
+        }
+    }
+}
