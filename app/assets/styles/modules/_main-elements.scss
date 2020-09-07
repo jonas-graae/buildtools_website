@@ -43,3 +43,58 @@ a {
         }
     }
 }
+
+.primary-nav {
+    padding-top: 10px;
+
+    @include tablet {
+        padding-top: 0;
+    }
+
+    &--pull-right {
+        @include tablet {
+            float: right;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        @include tablet {
+            justify-content: space-between;
+        }
+        
+    }
+
+    li {
+        list-style: none;
+        @include tablet {
+            padding-right: 20px;
+        }
+        
+        &:last-child {
+            padding-right: 0;
+            @include tablet {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 300;
+        padding: 5px 8px;
+        font-size: 0.8rem;
+        background-color: rgba($primary-color, 0.5);
+        
+        @include tablet {
+            font-size: 1rem;
+            padding: 12px 0;
+            background-color: transparent;
+        }
+    }
+}
